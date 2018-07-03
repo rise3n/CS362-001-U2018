@@ -191,19 +191,27 @@ public class Appt{
     	this.startHour = startHour;
     }
     
-    /** Sets startHour */
-    public void setStartMinute(int startMinute) {   	
+       public void setStartMinute(int startMinute) {  
+	      if(startMinute>0)
         this.startMinute = startMinute;
+		else
+		this.startMinute=null;
     }
 
     /** Sets startDay */
     public void setStartDay(int startDay) {
-        this.startDay = startDay;
+        if(startDay>0)
+		this.startDay = startDay;
+		else
+		this.startDay=null;
     }
     
     /** Sets startMonth */
     public void setStartMonth(int startMonth) {
+	if(startMonth>0)
         this.startMonth = startMonth;
+		else
+		this.startMonth=null;
     }
     
     /** Sets startYear */
